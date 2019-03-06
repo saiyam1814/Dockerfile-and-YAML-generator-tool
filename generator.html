@@ -14,9 +14,16 @@
         body{
             /* background-image: url("images/Landing_Page_Banner.png"); */
             /* background-repeat: no-repeat;    */
-            background-color: #d20638;
+            background-color: #f3f1f2;
 
 
+    }
+    label {
+        display: inline-block;
+        max-width: 100%;
+        margin-bottom: 5px;
+        font-weight: 700;
+        color: #dddddd;
     }
     .container{
         padding: 0px 120px;
@@ -24,7 +31,7 @@
     }
     .homecontainer{
         padding: 20px;
-        color: white;
+        color: black;
     }
     .navbar-default {
         background-color: black;
@@ -36,7 +43,7 @@
         min-height: 300px;
         /* background-color: inherit; */
     }
-    #docker{
+    #docker, #Kubernetes{
         /* background-color: inherit; */    
         text-align: center;
         
@@ -46,16 +53,17 @@
     }
     .btn-primary{
         margin-top: 10px;
+        background-color: #5c98cc;
     }
     .mainform{
         padding: 20px 140px;
         color: white;        
     }
     .borderD{
-        padding: 40px 10px;
+        padding: 5px 10px;
         border: 1px solid white;
         border-radius: 10px;
-        background: black;
+        background: rgba(7, 7, 7, 0.5);
     }
     #yamldiv{
        
@@ -72,10 +80,20 @@
     }
     .addbutton {
         color: white;
-        background-color: #5b6cda;
+        background-color: #5c98cc;
         border-color: #ccc;
         margin-right: 4px;
-}
+    }
+    .navbar-default .navbar-brand {
+        color: #f5f5f5;
+    }
+    .navbar-default .navbar-nav>li>a {
+        color: #f5f5f5;
+    }
+    .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+        color: #f5f5f5;
+        background-color: transparent;
+    }
 
     </style>
 </head>
@@ -111,11 +129,15 @@
     </div>
 
     <div id="docker">
-        <h3 style="color:white">Docker Form</h3>
         <div id="app">
 
             <div class="mainform">
+
                 <div class="borderD">
+                        <h3 style="color: white;
+                        font-weight: 700;
+                        margin-bottom: 20px;">Docker Form</h3>
+
                     <div class="form-horizontal" role="form">
                         <div class="form-group">
                             <label for="txtDockerImageName" class="col-md-2 control-label">Docker Image Name:</label>
@@ -323,10 +345,12 @@
 
     <div id="Kubernetes">
         <br>
-        <h3>Kubernetes Form</h3>
         <div id="dockerapp">
             <div class="mainform">
                 <div class="borderD">
+                        <h3 style="color: white;
+                        font-weight: 700;
+                        margin-bottom: 20px;">Kuber Form</h3>
                     <div class="form-horizontal" role="form">
                         <div class="form-group">
                             <label for="txtfrom" class="col-md-2 control-label">FROM </label>
